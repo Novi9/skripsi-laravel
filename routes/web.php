@@ -39,6 +39,9 @@ Route::get('/kriteria', function () {
     return view('pages.kriteria.index');
 });
 
+Route::get('/kriteria', 'KriteriaController@index')->name('kriteria-index');
+Route::get('/detail-kriteria', 'KriteriaController@detail')->name('kriteria-detail');
+
 Route::get('/laporan', function () {
     return view('pages.laporan.index');
 });
@@ -46,3 +49,6 @@ Route::get('/laporan', function () {
 Route::get('/seleksi', function () {
     return view('pages.seleksi.index');
 });
+
+// Ini contohnya ya nak
+Route::get('/input-pengajuan/items/{item_code}', 'InputController@getItem')->name('inputPengajuanGetItem');
