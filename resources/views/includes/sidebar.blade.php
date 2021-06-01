@@ -15,10 +15,21 @@
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
             <li class=" navigation-header"><span>Menu</span>
             </li>
-            <li class=" nav-item"><a href="/permintaan"><i class="feather icon-file-text"></i><span class="menu-title">Permintaan</span></a>
+            <li class=" nav-item"><a href="/permintaan"><i class="feather icon-home"></i><span class="menu-title">Beranda</span></a>
             </li>
-            <li class=" nav-item mb-1"><a href="/permintaan"><i class="feather icon-file-text"></i><span class="menu-title">Permintaan</span></a>
+            <li class=" nav-item"><a href="/permintaan"><i class="feather icon-file-text"></i><span class="menu-title">Data Kriteria</span></a>
             </li>
+            <li class=" nav-item"><a href="/permintaan"><i class="feather icon-file-text"></i><span class="menu-title">Data Alternatif</span></a>
+            </li>
+            <li class=" nav-item"><a href="/permintaan"><i class="feather icon-users"></i><span class="menu-title">Data Pelamar</span></a>
+            </li>
+            <li class=" nav-item"><a href="/permintaan"><i class="feather icon-file-text"></i><span class="menu-title">Perhitungan Dan Seleksi</span></a>
+            </li>
+            <li class=" nav-item"><a href="/permintaan"><i class="feather icon-file-text"></i><span class="menu-title">Informasi</span></a>
+            </li>
+            <li class=" nav-item"><a href="/permintaan"><i class="feather icon-file-text"></i><span class="menu-title">Laporan</span></a>
+            </li>
+
             {{-- @if(auth()->user()->role == 'pic' || auth()->user()->role == 'mr' || auth()->user()->role == 'pp')
                 <li class=" nav-item {{ (request()->is('permintaan*')) ? 'active' : '' }}"><a href="/permintaan"><i class="feather icon-file-text"></i><span class="menu-title">Permintaan</span></a>
                 </li>

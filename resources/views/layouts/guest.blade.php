@@ -9,7 +9,7 @@
     <meta name="description" content="Nutrifood">
     <meta name="keywords" content="Nutrifood">
     <meta name="author" content="Nutrifood">
-    <title>Seleksi Pelamar Mahad Abu Ubaidah</title>
+    <title>@yield('title')</title>
 
     @include('includes.styles')
 
@@ -20,7 +20,7 @@
 
 <!-- BEGIN: Body-->
 
-<body class="vertical-layout vertical-menu-modern dark-layout 2-columns  navbar-floating footer-static" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+<body class="vertical-layout vertical-menu-modern 2-columns  navbar-floating footer-static" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
 
     @include('includes.header')
 

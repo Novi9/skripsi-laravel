@@ -18,3 +18,31 @@ Route::get('/', function () {
 Route::get('/login', function () {
     return view('pages.auth.login');
 });
+
+Route::get('/dashboard', function () {
+    return view('pages.dashboard.index');
+});
+
+Route::get('/alternatif', function () {
+    return view('pages.alternatif.index');
+});
+
+Route::get('/login', function () {
+    return view('pages.auth.register');
+});
+
+Route::get('/informasi', function () {
+    return view('pages.informasi.index');
+});
+
+Route::get('/kriteria', function () {
+    return view('pages.kriteria.index');
+});
+
+Route::get('/laporan', function () {
+    return view('pages.laporan.index');
+});
+
+Route::get('/seleksi', function () {
+    return view('pages.seleksi.index');
+});
