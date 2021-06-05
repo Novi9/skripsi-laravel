@@ -50,5 +50,7 @@ Route::get('/seleksi', function () {
     return view('pages.seleksi.index');
 });
 
+Route::get('/seleksi', 'SeleksiController@index')->name('seleksi-index');
+
 // Ini contohnya ya nak
 Route::get('/input-pengajuan/items/{item_code}', 'InputController@getItem')->name('inputPengajuanGetItem');
