@@ -77,6 +77,14 @@
                                                     <label for="password">Kata Sandi</label>
                                                 </fieldset>
 
+                                                <fieldset class="form-label-group position-relative has-icon-left">
+                                                    <input type="confirm-password" class="form-control" id="confirm-password" name="confirm-password" placeholder="Ulangi Kata Sandi" required>
+                                                    <div class="form-control-position">
+                                                        <i class="feather icon-lock"></i>
+                                                    </div>
+                                                    <label for="confirm-password">Ulangi Kata Sandi</label>
+                                                </fieldset>
+
                                                 {{-- <div class="form-group d-flex justify-content-between align-items-center">
                                                     <div class="text-left">
                                                         <fieldset class="checkbox">
