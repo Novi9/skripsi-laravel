@@ -11,46 +11,26 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.home.index');
-});
 
-Route::get('/login', function () {
-    return view('pages.auth.login');
-});
 
-Route::get('/dashboard', function () {
-    return view('pages.dashboard.index');
-});
+Route::get('/login', 'AuthController@login')->name('auth-login');
+Route::post('/login-logic', 'AuthController@loginLogic')->name('loginLogic');
+Route::get('/register', 'AuthController@register')->name('auth.register');
+Route::post('/register-logic', 'AuthController@registerLogic')->name('registerLogic');
 
-Route::get('/alternatif', function () {
-    return view('pages.alternatif.index');
-});
+Route::get('/', 'HomeController@home')->name('home');
+Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
 
-Route::get('/login', function () {
-    return view('pages.auth.register');
-});
+Route::get('/alternatif', 'AlternatifController@index')->name('alternatif-index');
+Route::get('/alternatif-detail', 'AlternatifController@detail')->name('alternatif-detail');
 
-Route::get('/informasi', function () {
-    return view('pages.informasi.index');
-});
-
-Route::get('/kriteria', function () {
-    return view('pages.kriteria.index');
-});
+Route::get('/informasi', 'InformasiController@index')->name('informasi-index');
 
 Route::get('/kriteria', 'KriteriaController@index')->name('kriteria-index');
 Route::get('/detail-kriteria', 'KriteriaController@detail')->name('kriteria-detail');
 
-Route::get('/laporan', function () {
-    return view('pages.laporan.index');
-});
-
-Route::get('/seleksi', function () {
-    return view('pages.seleksi.index');
-});
+Route::get('/laporan', 'LaporanController@index')->name('laporan-index');
 
 Route::get('/seleksi', 'SeleksiController@index')->name('seleksi-index');
 
-// Ini contohnya ya nak
-Route::get('/input-pengajuan/items/{item_code}', 'InputController@getItem')->name('inputPengajuanGetItem');
+Route::get('/logout', 'AuthController@logout')->name('auth-logout');

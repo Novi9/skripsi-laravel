@@ -2,7 +2,7 @@
 <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
     <div class="navbar-header">
         <ul class="nav navbar-nav flex-row">
-            <li class="nav-item mr-auto"><a class="navbar-brand" href="/">
+            <li class="nav-item mr-auto"><a class="navbar-brand" href="{{ route('dashboard') }}">
                     <div class="brand-logo">
                         <img style="width: 45px;margin-left:-4px;" src="{{ url('logo mahaddd.png')}}"> <span style="font-size: 18px">&nbsp;&nbsp;Abu Ubaidah</span>
                     </div>
@@ -15,19 +15,17 @@
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
             <li class=" navigation-header"><span>Menu</span>
             </li>
-            <li class=" nav-item"><a href="/permintaan"><i class="feather icon-home"></i><span class="menu-title">Beranda</span></a>
+            <li class="nav-item"><a href="{{ route('dashboard') }}"><i class="feather icon-home"></i><span class="menu-title">Beranda</span></a>
             </li>
-            <li class=" nav-item"><a href="/permintaan"><i class="feather icon-file-text"></i><span class="menu-title">Data Kriteria</span></a>
+            <li class="nav-item"><a href="{{ route('kriteria-index') }}"><i class="feather icon-file-text"></i><span class="menu-title">Data Kriteria</span></a>
             </li>
-            <li class=" nav-item"><a href="/permintaan"><i class="feather icon-file-text"></i><span class="menu-title">Data Alternatif</span></a>
+            <li class="nav-item"><a href="{{ route('alternatif-index') }}"><i class="feather icon-users"></i><span class="menu-title">Data Alternatif</span></a>
             </li>
-            <li class=" nav-item"><a href="/permintaan"><i class="feather icon-users"></i><span class="menu-title">Data Pelamar</span></a>
+            <li class="nav-item"><a href="{{ route('seleksi-index') }}"><i class="feather icon-file-text"></i><span class="menu-title">Perhitungan Dan Seleksi</span></a>
             </li>
-            <li class=" nav-item"><a href="/permintaan"><i class="feather icon-file-text"></i><span class="menu-title">Perhitungan Dan Seleksi</span></a>
+            <li class="nav-item"><a href="{{ route('informasi-index') }}"><i class="feather icon-file-text"></i><span class="menu-title">Informasi</span></a>
             </li>
-            <li class=" nav-item"><a href="/permintaan"><i class="feather icon-file-text"></i><span class="menu-title">Informasi</span></a>
-            </li>
-            <li class=" nav-item"><a href="/permintaan"><i class="feather icon-file-text"></i><span class="menu-title">Laporan</span></a>
+            <li class="nav-item mb-1"><a href="{{ route('laporan-index') }}"><i class="feather icon-file-text"></i><span class="menu-title">Laporan</span></a>
             </li>
 
             {{-- @if(auth()->user()->role == 'pic' || auth()->user()->role == 'mr' || auth()->user()->role == 'pp')

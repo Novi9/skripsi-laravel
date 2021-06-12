@@ -8,7 +8,7 @@ class KriteriaController extends Controller
 {
     public function index()
     {
-        
+        return view('pages.kriteria.index');
     }
 
     public function detail()
