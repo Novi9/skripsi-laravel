@@ -32,6 +32,7 @@
         </div>
     </div>
 </div>
+
 <div class="content-body">
     <!-- Zero configuration table -->
     <section id="basic-datatable">
