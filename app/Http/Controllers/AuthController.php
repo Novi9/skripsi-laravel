@@ -17,21 +17,23 @@ class AuthController extends Controller
         return view('pages.auth.register');
     }
 
-    public function checkLogin(Request $request)
+    public function loginLogic(Request $request)
     {
+        // dd(Auth::attempt($request->only('username', 'password')));
         if(Auth::attempt($request->only('username', 'password'))) {
-            if (Auth::user()->role == 'spg' || Auth::user()->role == 'mr' || Auth::user()->role == 'pp') {
+            if (Auth::user()->jabatan == 'spg' || Auth::user()->jabatan == 'mr' || Auth::user()->jabatan == 'pp') {
                 return redirect('/input-pengajuan');
-            } else if (Auth::user()->role  == 'pic') {
+            } else if (Auth::user()->jabatan  == 'pic') {
                 return redirect()->intended('/permintaan');
             } else {
+                // dd($request->toArray());
                 return redirect()->intended('/dashboard');
             }
         }
-        return redirect('/')->with('alert','Password atau Username, Salah!');;
+        return redirect('/login')->with('alert','Password atau Username, Salah!');;
     }
 
-    public function checkRegister(Request $request)
+    public function registerLogic(Request $request)
     {
         if(Auth::attempt($request->only('username', 'password'))) {
             if (Auth::user()->role == 'spg' || Auth::user()->role == 'mr' || Auth::user()->role == 'pp') {
@@ -48,6 +50,6 @@ class AuthController extends Controller
     public function logout()
     {
         Auth::logout();
-        return redirect('/');
+        return redirect()->route('auth-login');
     }
 }
