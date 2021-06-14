@@ -21,13 +21,11 @@ Route::group(['middleware' => ['guest']], function () {
 
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
-    Route::get('/logout', 'AuthController@logout')->name('logout');
     Route::get('/logout', 'AuthController@logout')->name('auth-logout');
 });
 
 Route::group(['middleware' => ['auth', 'role:admin,alternatif']], function () {
     Route::get('/informasi', 'InformasiController@index')->name('informasi-index');
-
 });
 
 Route::group(['middleware' => ['auth', 'role:alternatif']], function () {

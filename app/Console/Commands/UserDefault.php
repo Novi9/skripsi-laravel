@@ -53,6 +53,5 @@ class UserDefault extends Command
         $user->jabatan = 'direktur';
         $user->remember_token = Str::random(60);
         $user->save();
-
     }
 }
