@@ -10,9 +10,6 @@
                                 <div class="col-15">
                                 <nav class="menu main menu container">
                                     <ul id="menu-main-menu-1" class="menu">
-                                        <button type="button" class="btn btn-flat-primary ml-2 mb-1">Home</button>
-                                    <button type="button" class="btn btn-flat-primary ml-2 mb-1">AHP-TOPSIS</button>
-                                    <button type="button" class="btn btn-flat-primary ml-2 mb-1">Tentang</button>
                                 </div>
                             </div>
                         </div>

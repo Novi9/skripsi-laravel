@@ -17,21 +17,6 @@
 @endsection
 
 @section('content')
-<div class="content-header row">
-    <div class="content-header-left col-md-9 col-12 mb-2">
-        <div class="row breadcrumbs-top">
-            <div class="col-12">
-                <h2 class="content-header-title float-left mb-0">Informasi</h2>
-
-            </div>
-        </div>
-    </div>
-    <div class="content-header-right text-md-right col-md-3 col-12 d-md-block d-none">
-        <div class="form-group breadcrum-right">
-
-        </div>
-    </div>
-</div>
 <div class="content-body">
     <!-- Zero configuration table -->
     <section id="basic-datatable">
@@ -39,9 +24,11 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header pb-3">
-                        <h4 class="card-title">Selamat Datang User</h4>
+                        <h4 class="card-title">About Us</h4>
+                        <p>Terima Kasih Telah Mengisi Data Diri Anda, Kami Akan Menghubungi Anda Untuk Informasi Selanjutnya</p>
+                        <i class="feather icon-user"></i><span class="menu-title">082272276352</span>
+                        <i class="feather icon-mail"></i><span class="menu-title">novitapratiwi8@gmail.com</span>
                     </div>
-
                 </div>
             </div>
         </div>

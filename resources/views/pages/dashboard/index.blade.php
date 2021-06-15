@@ -17,21 +17,6 @@
 @endsection
 
 @section('content')
-<div class="content-header row">
-    <div class="content-header-left col-md-9 col-12 mb-2">
-        <div class="row breadcrumbs-top">
-            <div class="col-12">
-                <h2 class="content-header-title float-left mb-0">Home</h2>
-
-            </div>
-        </div>
-    </div>
-    <div class="content-header-right text-md-right col-md-3 col-12 d-md-block d-none">
-        <div class="form-group breadcrum-right">
-
-        </div>
-    </div>
-</div>
 
 <div class="content-body">
     <!-- Zero configuration table -->
@@ -39,8 +24,9 @@
         <div class="row">
             <div class="col-12">
                 <div class="card">
-                    <div class="card-header pb-3">
-                        <h4 class="card-title">Selamat Datang User</h4>
+                    <div class="card-header pb-4">
+                        <h4 class="card-title">SELAMAT DATANG ADMIN</h4>
+                        <p>Penerapan Metode AHP dan TOPSIS Pada Seleksi Penerimaan Karyawan Baru Pada Ma'had Abu Ubaidah Bin Al-Jarrah Medan</p>
                     </div>
 
                 </div>
