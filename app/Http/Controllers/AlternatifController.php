@@ -16,4 +16,8 @@ class AlternatifController extends Controller
         return view('pages.alternatif.detail');
     }
 
+    public function biodata()
+    {
+        return view('pages.alternatif.biodata');
+    }
 }

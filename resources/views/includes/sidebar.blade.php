@@ -21,6 +21,8 @@
             </li>
             <li class="nav-item {{ (request()->is('alternatif*')) ? 'active' : '' }}"><a href="{{ route('alternatif-index') }}"><i class="feather icon-users"></i><span class="menu-title">Data Alternatif</span></a>
             </li>
+            <li class="nav-item {{ (request()->is('alternatif-biodata*')) ? 'active' : '' }}"><a href="{{ route('alternatif-biodata') }}"><i class="feather icon-user"></i><span class="menu-title">Biodata</span></a>
+            </li>
             <li class="nav-item {{ (request()->is('seleksi')) ? 'active' : '' }}"><a href="{{ route('seleksi-index') }}"><i class="feather icon-file-text"></i><span class="menu-title">Perhitungan Dan Seleksi</span></a>
             </li>
             <li class="nav-item {{ (request()->is('informasi')) ? 'active' : '' }}"><a href="{{ route('informasi-index') }}"><i class="feather icon-file-text"></i><span class="menu-title">Informasi</span></a>

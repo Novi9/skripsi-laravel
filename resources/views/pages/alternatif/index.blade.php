@@ -21,7 +21,7 @@
     <div class="content-header-left col-md-9 col-12 mb-2">
         <div class="row breadcrumbs-top">
             <div class="col-12">
-                <h2 class="content-header-title float-left mb-0">DATA ALTERNATIF</h2>
+                <h2 class="content-header-title float-left mb-0">DATA PELAMAR</h2>
 
             </div>
         </div>
@@ -31,22 +31,6 @@
 
         </div>
     </div>
-</div>
-<div class="content-body">
-    <!-- Zero configuration table -->
-    <section id="basic-datatable">
-        <div class="row">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-header pb-3">
-                        <h4 class="card-title">Selamat Datang User</h4>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--/ Zero configuration table -->
 </div>
 
 <div class="content-body">
@@ -73,8 +57,6 @@
                                             <td> 1 </td>
                                             <td> Novita Pratiwi </td>
                                             <td> Test 123 </td>
-                                            <td> Test Lagi </td>
-                                            <td> Isi lah nanti sendiri mau apa </td>
                                             <td>
                                                 <button type="button" class="btn btn-icon btn-warning btn-relief-warning mr-1 mb-1 waves-effect waves-light editBtn" data-toggle="modal" data-target="#editBarang">
                                                     <i class="feather icon-edit"></i>
@@ -88,8 +70,6 @@
                                             <td> 2 </td>
                                             <td> Novita Pratiwi </td>
                                             <td> Test 123 </td>
-                                            <td> Test Lagi </td>
-                                            <td> Isi lah nanti sendiri mau apa </td>
                                             <td>
                                                 <button type="button" class="btn btn-icon btn-warning btn-relief-warning mr-1 mb-1 waves-effect waves-light editBtn" data-toggle="modal" data-target="#editBarang">
                                                     <i class="feather icon-edit"></i>
@@ -103,8 +83,6 @@
                                             <td> 3 </td>
                                             <td> Novita Pratiwi </td>
                                             <td> Test 123 </td>
-                                            <td> Test Lagi </td>
-                                            <td> Isi lah nanti sendiri mau apa </td>
                                             <td>
                                                 <button type="button" class="btn btn-icon btn-warning btn-relief-warning mr-1 mb-1 waves-effect waves-light editBtn" data-toggle="modal" data-target="#editBarang">
                                                     <i class="feather icon-edit"></i>
