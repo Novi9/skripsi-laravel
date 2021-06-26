@@ -58,7 +58,7 @@ class UserDefault extends Command
         $user->nama = 'Pelamar';
         $user->username = 'pelamar123';
         $user->password = bcrypt('pelamar123');
-        $user->jabatan = 'pelamar';
+        $user->jabatan = 'alternatif';
         $user->remember_token = Str::random(60);
         $user->save();
     }
