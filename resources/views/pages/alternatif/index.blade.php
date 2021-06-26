@@ -59,10 +59,7 @@
                                             <td> Test 123 </td>
                                             <td>
                                                 <button type="button" class="btn btn-icon btn-warning btn-relief-warning mr-1 mb-1 waves-effect waves-light editBtn" data-toggle="modal" data-target="#editBarang">
-                                                    <i class="feather icon-edit"></i>
-                                                </button>
-                                                <button type="button" class="btn btn-icon btn-danger btn-relief-danger mr-1 mb-1 waves-effect waves-light hapusBtn" data-toggle="modal" data-target="#hapusBarang">
-                                                    <i class="feather icon-trash-2"></i>
+                                                    <i class="feather icon-eye"></i>
                                                 </button>
                                             </td>
                                         </tr>
@@ -72,10 +69,7 @@
                                             <td> Test 123 </td>
                                             <td>
                                                 <button type="button" class="btn btn-icon btn-warning btn-relief-warning mr-1 mb-1 waves-effect waves-light editBtn" data-toggle="modal" data-target="#editBarang">
-                                                    <i class="feather icon-edit"></i>
-                                                </button>
-                                                <button type="button" class="btn btn-icon btn-danger btn-relief-danger mr-1 mb-1 waves-effect waves-light hapusBtn" data-toggle="modal" data-target="#hapusBarang">
-                                                    <i class="feather icon-trash-2"></i>
+                                                    <i class="feather icon-eye"></i>
                                                 </button>
                                             </td>
                                         </tr>
@@ -85,10 +79,7 @@
                                             <td> Test 123 </td>
                                             <td>
                                                 <button type="button" class="btn btn-icon btn-warning btn-relief-warning mr-1 mb-1 waves-effect waves-light editBtn" data-toggle="modal" data-target="#editBarang">
-                                                    <i class="feather icon-edit"></i>
-                                                </button>
-                                                <button type="button" class="btn btn-icon btn-danger btn-relief-danger mr-1 mb-1 waves-effect waves-light hapusBtn" data-toggle="modal" data-target="#hapusBarang">
-                                                    <i class="feather icon-trash-2"></i>
+                                                    <i class="feather icon-eye"></i>
                                                 </button>
                                             </td>
                                         </tr>
