@@ -21,7 +21,7 @@
     <div class="content-header-left col-md-9 col-12 mb-2">
         <div class="row breadcrumbs-top">
             <div class="col-12">
-                <h2 class="content-header-title float-left mb-0">Home</h2>
+                <h2 class="content-header-title float-left mb-0">PERHITUNGAN DAN SELEKSI</h2>
 
             </div>
         </div>
@@ -38,10 +38,64 @@
         <div class="row">
             <div class="col-12">
                 <div class="card">
-                    <div class="card-header pb-3">
-                        <h4 class="card-title">Selamat Datang User</h4>
+                        <fieldset class="form-group">
+                            <select class="custom-select" id="customSelect">
+                                <option selected="">Filter By</option>
+                            </select>
+                        </fieldset>
                     </div>
-
+                    <div class="col-12">
+                        <div class="card-body card-dashboard">
+                            <div class="table-responsive" style="overflow-x: hidden;">
+                                <table id="datatable" class="table zero-configuration table-striped table-bordered text-center">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Alternatif</th>
+                                            <th>Nilai Akhir</th>
+                                            <th>Peringkat</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td> 1 </td>
+                                            <td> Novita Pratiwi </td>
+                                            <td> Test 123 </td>
+                                            <td> Pertama (1) </td>
+                                            <td>
+                                                    <button type="button" class="btn btn-icon btn-warning btn-relief-warning mr-1 mb-1 waves-effect waves-light editBtn" data-toggle="modal" data-target="#editBarang">
+                                                        <i class="feather icon-eye"></i>
+                                                    </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td> 2 </td>
+                                            <td> Novita Pratiwi </td>
+                                            <td> Test 123 </td>
+                                            <td> Kedua (2) </td>
+                                            <td>
+                                                    <button type="button" class="btn btn-icon btn-warning btn-relief-warning mr-1 mb-1 waves-effect waves-light editBtn" data-toggle="modal" data-target="#editBarang">
+                                                        <i class="feather icon-eye"></i>
+                                                    </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td> 3 </td>
+                                            <td> Novita Pratiwi </td>
+                                            <td> Test 123 </td>
+                                            <td> Ketiga (3) </td>
+                                            <td>
+                                                    <button type="button" class="btn btn-icon btn-warning btn-relief-warning mr-1 mb-1 waves-effect waves-light editBtn" data-toggle="modal" data-target="#editBarang">
+                                                        <i class="feather icon-eye"></i>
+                                                    </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
