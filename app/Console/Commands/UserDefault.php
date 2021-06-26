@@ -53,5 +53,13 @@ class UserDefault extends Command
         $user->jabatan = 'direktur';
         $user->remember_token = Str::random(60);
         $user->save();
+
+        $user = new \App\Model\User;
+        $user->nama = 'Pelamar';
+        $user->username = 'pelamar123';
+        $user->password = bcrypt('pelamar123');
+        $user->jabatan = 'pelamar';
+        $user->remember_token = Str::random(60);
+        $user->save();
     }
 }
