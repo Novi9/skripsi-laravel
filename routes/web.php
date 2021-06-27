@@ -24,11 +24,11 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/logout', 'AuthController@logout')->name('auth-logout');
 });
 
-Route::group(['middleware' => ['auth', 'role:admin,alternatif']], function () {
+Route::group(['middleware' => ['auth', 'role:admin,pelamar']], function () {
     Route::get('/informasi', 'InformasiController@index')->name('informasi-index');
 });
 
-Route::group(['middleware' => ['auth', 'role:alternatif']], function () {
+Route::group(['middleware' => ['auth', 'role:pelamar']], function () {
     Route::get('/alternatif-biodata', 'AlternatifController@biodata')->name('alternatif-biodata');
 });
 

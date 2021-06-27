@@ -36,6 +36,18 @@
 <div class="content-body">
     <!-- Zero configuration table -->
     <section id="basic-datatable">
+        <div class="card p-2">
+            <div class="row justify-content-end">
+                <div class="col-2">
+                    <fieldset class="position-relative has-icon-left input-divider-left">
+                        <input type="text" class="form-control" id="iconLeft3" placeholder="Search">
+                        <div class="form-control-position">
+                            <i class="feather icon-search"></i>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-12">
                 <div class="card">
@@ -59,10 +71,7 @@
                                             <td> Test 123 </td>
                                             <td>
                                                 <button type="button" class="btn btn-icon btn-warning btn-relief-warning mr-1 mb-1 waves-effect waves-light editBtn" data-toggle="modal" data-target="#editBarang">
-                                                    <i class="feather icon-edit"></i>
-                                                </button>
-                                                <button type="button" class="btn btn-icon btn-danger btn-relief-danger mr-1 mb-1 waves-effect waves-light hapusBtn" data-toggle="modal" data-target="#hapusBarang">
-                                                    <i class="feather icon-trash-2"></i>
+                                                    <i class="feather icon-eye"></i>
                                                 </button>
                                             </td>
                                         </tr>
@@ -72,10 +81,7 @@
                                             <td> Test 123 </td>
                                             <td>
                                                 <button type="button" class="btn btn-icon btn-warning btn-relief-warning mr-1 mb-1 waves-effect waves-light editBtn" data-toggle="modal" data-target="#editBarang">
-                                                    <i class="feather icon-edit"></i>
-                                                </button>
-                                                <button type="button" class="btn btn-icon btn-danger btn-relief-danger mr-1 mb-1 waves-effect waves-light hapusBtn" data-toggle="modal" data-target="#hapusBarang">
-                                                    <i class="feather icon-trash-2"></i>
+                                                    <i class="feather icon-eye"></i>
                                                 </button>
                                             </td>
                                         </tr>
@@ -85,10 +91,7 @@
                                             <td> Test 123 </td>
                                             <td>
                                                 <button type="button" class="btn btn-icon btn-warning btn-relief-warning mr-1 mb-1 waves-effect waves-light editBtn" data-toggle="modal" data-target="#editBarang">
-                                                    <i class="feather icon-edit"></i>
-                                                </button>
-                                                <button type="button" class="btn btn-icon btn-danger btn-relief-danger mr-1 mb-1 waves-effect waves-light hapusBtn" data-toggle="modal" data-target="#hapusBarang">
-                                                    <i class="feather icon-trash-2"></i>
+                                                    <i class="feather icon-eye"></i>
                                                 </button>
                                             </td>
                                         </tr>
