@@ -13,6 +13,8 @@
 
 Route::group(['middleware' => ['guest']], function () {
     Route::get('/', 'HomeController@home')->name('home');
+    Route::get('/metode', 'HomeController@metode')->name('home-metode');
+    Route::get('/tentang', 'HomeController@tentang')->name('home-tentang');
     Route::get('/login', 'AuthController@login')->name('auth-login');
     Route::get('/register', 'AuthController@register')->name('auth.register');
     Route::post('/login-logic', 'AuthController@loginLogic')->name('loginLogic');

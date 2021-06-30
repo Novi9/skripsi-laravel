@@ -38,13 +38,13 @@
             <div class="navbar-container main-menu-content" data-menu="menu-container">
                 <!-- include ../../../includes/mixins-->
                 <ul class="nav navbar-nav" id="main-menu-navigation" data-menu="menu-navigation">
-                    <li class="nav-item active" data-menu=""><a class="dropdown-item" href="dashboard-analytics.html" data-toggle="dropdown" data-i18n="Analytics"><i class="feather icon-activity"></i>Analytics</a>
+                    <li class="nav-item {{ (request()->is('/')) ? 'active' : '' }}" data-menu=""><a class="dropdown-item" href="{{ route('home') }}"><i class=""></i>Home</a>
                     </li>
-                    <li class="nav-item" data-menu=""><a class="dropdown-item" href="dashboard-analytics.html" data-toggle="dropdown" data-i18n="Analytics"><i class="feather icon-activity"></i>Analytics</a>
+                    <li class="nav-item {{ (request()->is('metode')) ? 'active' : '' }}" data-menu=""><a class="dropdown-item" href="{{ route('home-metode') }}"><i class=""></i>AHP-TOPSIS</a>
                     </li>
-                    <li class="nav-item" data-menu=""><a class="dropdown-item" href="dashboard-analytics.html" data-toggle="dropdown" data-i18n="Analytics"><i class="feather icon-activity"></i>Analytics</a>
+                    <li class="nav-item {{ (request()->is('tentang')) ? 'active' : '' }}" data-menu=""><a class="dropdown-item" href="{{ route('home-tentang') }}"><i class=""></i>Tentang</a>
                     </li>
-                    <li class="nav-item" data-menu=""><a class="dropdown-item" href="dashboard-analytics.html" data-toggle="dropdown" data-i18n="Analytics"><i class="feather icon-activity"></i>Analytics</a>
+                    <li class="nav-item {{ (request()->is('login')) ? 'active' : '' }}" data-menu=""><a class="dropdown-item" href="{{ route('auth-login') }}"><i class=""></i>Login</a>
                     </li>
                 </ul>
             </div>
@@ -58,7 +58,7 @@
         <div class="content-wrapper">
 
             @yield('content')
-            
+
         </div>
     </div>
 

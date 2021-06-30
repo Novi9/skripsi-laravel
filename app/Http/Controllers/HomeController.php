@@ -14,7 +14,16 @@ class HomeController extends Controller
 
     public function home()
     {
-        // dd(Auth::user()->toArray());
         return view('pages.home.index');
+    }
+
+    public function metode()
+    {
+        return view('pages.home.metode');
+    }
+
+    public function tentang()
+    {
+        return view('pages.home.tentang');
     }
 }
