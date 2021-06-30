@@ -18,7 +18,7 @@
 
 @section('content')
 <div class="card p-2">
-<div class="content-header row mt-n5">
+<div class="content-header row">
     <div class="content-header-left col-md-9 col-12 mb-2">
         <div class="row breadcrumbs-top">
             <div class="col-12">
