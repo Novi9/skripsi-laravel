@@ -20,30 +20,52 @@
 
 <!-- BEGIN: Body-->
 
-<body class="vertical-layout vertical-menu-modern 2-columns  navbar-floating footer-static" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+<body class="horizontal-layout horizontal-menu 2-columns  navbar-floating footer-static  " data-open="hover" data-menu="horizontal-menu" data-col="2-columns">
 
-    @include('includes.header')
+    <!-- BEGIN: Main Menu-->
+    <div class="horizontal-menu-wrapper mt-n5">
+        <div class="header-navbar navbar-expand-sm navbar navbar-horizontal floating-nav navbar-light navbar-without-dd-arrow navbar-shadow menu-border" role="navigation" data-menu="menu-wrapper">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav flex-row">
+                    <li class="nav-item mr-auto"><a class="navbar-brand" href="../../../html/ltr/horizontal-menu-template/index.html">
+                            <div class="brand-logo"></div>
+                            <h2 class="brand-text mb-0">Vuexy</h2>
+                        </a></li>
+                    <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="feather icon-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i class="toggle-icon feather icon-disc font-medium-4 d-none d-xl-block collapse-toggle-icon primary" data-ticon="icon-disc"></i></a></li>
+                </ul>
+            </div>
+            <!-- Horizontal menu content-->
+            <div class="navbar-container main-menu-content" data-menu="menu-container">
+                <!-- include ../../../includes/mixins-->
+                <ul class="nav navbar-nav" id="main-menu-navigation" data-menu="menu-navigation">
+                    <li class="nav-item active" data-menu=""><a class="dropdown-item" href="dashboard-analytics.html" data-toggle="dropdown" data-i18n="Analytics"><i class="feather icon-activity"></i>Analytics</a>
+                    </li>
+                    <li class="nav-item" data-menu=""><a class="dropdown-item" href="dashboard-analytics.html" data-toggle="dropdown" data-i18n="Analytics"><i class="feather icon-activity"></i>Analytics</a>
+                    </li>
+                    <li class="nav-item" data-menu=""><a class="dropdown-item" href="dashboard-analytics.html" data-toggle="dropdown" data-i18n="Analytics"><i class="feather icon-activity"></i>Analytics</a>
+                    </li>
+                    <li class="nav-item" data-menu=""><a class="dropdown-item" href="dashboard-analytics.html" data-toggle="dropdown" data-i18n="Analytics"><i class="feather icon-activity"></i>Analytics</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- END: Main Menu-->
 
-    @include('includes.sidebar')
-
-    <!-- BEGIN: Content-->
     <div class="app-content content">
         <div class="content-overlay"></div>
         <div class="header-navbar-shadow"></div>
         <div class="content-wrapper">
 
             @yield('content')
-
+            
         </div>
     </div>
-    <!-- END: Content-->
 
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
 
     @include('includes.footer')
-
-
 
     @yield('prepend_script')
 
@@ -52,6 +74,5 @@
     @yield('append_script')
 
 </body>
-<!-- END: Body-->
 
 </html>
