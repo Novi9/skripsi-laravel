@@ -30,7 +30,7 @@
                     <div class="card bg-authentication rounded-0 mb-0">
                         <div class="row m-0">
                             <div class="col-lg-6 d-lg-block d-none text-center align-self-center px-0 py-0">
-                                <img class="w-100" src="{{ url('app-assets/images/login/ilustrasi_login.jpg') }}" alt="branding logo">
+                                <img class="w-100" src="{{ url('login.jpg') }}" alt="branding logo">
                             </div>
                             <div class="col-lg-6 col-12 p-0 my-auto">
                                 <div class="card rounded-0 mb-0 px-2">
