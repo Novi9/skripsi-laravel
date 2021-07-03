@@ -25,10 +25,15 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header pb-4">
-                        <h4 class="card-title">SELAMAT DATANG ADMIN</h4>
-                        <p>Penerapan Metode AHP dan TOPSIS Pada Seleksi Penerimaan Karyawan Baru Pada Ma'had Abu Ubaidah Bin Al-Jarrah Medan</p>
+                        <div class="row text-center">
+                            <div class="col-12">
+                                <h2 class="card-title text-uppercase">SELAMAT DATANG {{ auth()->user()->nama ?? " User" }}</h2>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <h4>Penerapan Metode AHP dan TOPSIS Pada Seleksi Penerimaan Karyawan Baru Pada Ma'had Abu Ubaidah Bin Al'Jarrah Medan</h4>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
