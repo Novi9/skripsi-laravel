@@ -32,7 +32,7 @@
                 </li>
             @endif
             @if(auth()->user()->jabatan == 'pelamar' || auth()->user()->jabatan == 'admin')
-                <li class="nav-item {{ (request()->is('informasi')) ? 'active' : '' }}"><a href="{{ route('informasi-index') }}"><i class="feather icon-file-text"></i><span class="menu-title">Informasi</span></a>
+                <li class="nav-item {{ auth()->user()->jabatan == 'pelamar' ? 'mb-1' : '' }} {{ (request()->is('informasi')) ? 'active' : '' }}"><a href="{{ route('informasi-index') }}"><i class="feather icon-file-text"></i><span class="menu-title">Informasi</span></a>
                 </li>
             @endif
             @if(auth()->user()->jabatan == 'direktur' || auth()->user()->jabatan == 'admin')
